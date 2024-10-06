@@ -533,7 +533,7 @@ char* subnet_mask = NULL;
 char* gateway_addr = NULL;
 uint8_t* ap_mac = NULL;
 char* ap_ssid = "Boosted Lighting AP";
-char* ap_passwd = "boosted24;
+char* ap_passwd = "boosted24";
 char* ap_ip = NULL;
 
 char* param_set_default(const char* def_val) {
