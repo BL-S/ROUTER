@@ -524,16 +524,16 @@ void wifi_init(const uint8_t* mac, const char* ssid, const char* ent_username, c
 }
 
 uint8_t* mac = NULL;
-char* ssid = NULL;
+char* ssid = "Boosted Lighting 00";
 char* ent_username = NULL;
 char* ent_identity = NULL;
-char* passwd = NULL;
+char* passwd = "boosted24";
 char* static_ip = NULL;
 char* subnet_mask = NULL;
 char* gateway_addr = NULL;
 uint8_t* ap_mac = NULL;
-char* ap_ssid = NULL;
-char* ap_passwd = NULL;
+char* ap_ssid = "Boosted Lighting AP";
+char* ap_passwd = "boosted24;
 char* ap_ip = NULL;
 
 char* param_set_default(const char* def_val) {
