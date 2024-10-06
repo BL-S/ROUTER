@@ -1,0 +1,25 @@
+name: Build ESP32 NAT Router
+
+on:
+  push:
+    branches:
+      - v1.00
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'  # Specify your required Python version
+      
+      - name: Install PlatformIO
+        run: pip install platformio
+      
+      - name: Build
+        run: platformio run
